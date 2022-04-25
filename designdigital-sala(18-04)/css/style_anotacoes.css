@@ -6,11 +6,19 @@ Qualquer dúvida consulte :::http://www.w3.org/community/webed/wiki/CSS/Properti
 
 /* Normatização CSS */
 
+
+
 body{
 	font-family: 'Roboto', sans-serif;
 	color: #444;
 	line-height: 1.5;
 	font-size: 100%;
+}
+
+*,*:after, *:before{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
 
 a{
@@ -90,7 +98,24 @@ h1{
 	color: #fff;
 }
 
+article{
+	width: 264px;
+	float: left;
+	margin-right: 24px;
+}
 
+article:last-child{
+	margin-right: 0;
+}
+
+h2{
+	font-size: 24px;
+}
+
+p{
+	font-size: 16px;
+	text-align: justify;
+}
 /*
 Todo 'a' vem por default sublinhado, para mudar isso deve-se usar as seguintes propriedades:
 text-decoration: none ==> retira o sublinhado;
